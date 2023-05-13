@@ -1,38 +1,187 @@
 .App {
-  text-align: center;
-}
+  /* text-align: center; */
+  /* background-color: #1f1a26; */
+  height: 100%;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  border-radius: 25px;
+  border: 4px solid #06020d;
   display: flex;
+}
+
+.Input {
+  display: flex;
+  width: 35%;
+  height: 100%;
+  border-radius: 20px 0px 0px 20px;
+}
+
+.StatBox {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  justify-content: center;
   flex-direction: column;
+}
+
+.StatBoxImage {
+  border: 4px solid #06020d;
+  border-radius: 30px;
+}
+
+.StatBoxLevel {
+  display: flex;
+  flex-direction: row;
+}
+
+.StatBoxLevelItem {
+  display: flex;
+}
+
+.StatItem {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  border: solid 1px #06020d;
+}
+
+.StatItemImage {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.Output {
+  display: flex;
+  width: 65%;
+  height: 100%;
+  flex-direction: column;
+}
+
+.ItemGold {
+  display: flex;
+  width: 100%;
+  height: 50%;
+  border-radius: 0px 0px 20px 0px;
+  flex-direction: column;
+}
+
+.ItemGoldTitle {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 30%;
+}
+.ItemGoldContainer {
+  padding-top: 10px;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-left: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.ItemGoldRow {
+  width: 46.5%;
+  height: 33%;
+  display: flex;
+  flex-direction: row;
+  column-gap: 5px;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ItemGoldItem {
+  display: flex;
+  width: 32px;
+  aspect-ratio: 1;
+  background-color: black;
+  border-radius: 5px;
 }
+
+.StarGold {
+  display: flex;
+  height: 50%;
+  width: 100%;
+  border-radius: 0px 20px 0px 0px;
+  flex-direction: column;
+}
+
+.StarGoldTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35%;
+}
+
+.StarGoldContainer {
+  display: flex;
+  width: 100%;
+}
+
+.StarGoldItem {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+
+  /* column-gap: 10px; */
+  /* padding-top: 20px; */
+  row-gap: 20px;
+
+  height: 100%;
+}
+
+#root {
+  /* display: flex; */
+  height: 100%;
+  width: 100%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-block: 60px;
+  padding-inline: 50px;
+}
+
+.Dropdown {
+  position: relative;
+  /* top: 40px;
+  left: 40px; */
+
+  display: flex;
+  border: 2px solid #06020d;
+  border-radius: 10px;
+  background-color: #1f1a26;
+  min-height: 200px;
+  min-width: 350px;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.DropdownTitle {
+  height: 30px;
+  width: 100%;
+}
+
+.DropdownItemContainer {
+  height: 120px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.DropdownItem {
+  display: flex;
+  width: 40px;
+  aspect-ratio: 1;
+  background-color: black;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  /* width: 100%; */
+}
+

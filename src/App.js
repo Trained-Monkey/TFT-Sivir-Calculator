@@ -1,24 +1,28 @@
 import logo from './logo.svg';
+import { Stat } from './components/Stat.tsx';
+import { StarGold } from './components/StarGold.tsx';
+import { ItemGold } from './components/ItemGold.tsx';
+import DropdownProvider from './contexts/DropdownContext.tsx';
+import StatProvider from './contexts/StatContext.tsx'
+
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <StatProvider>
+      <DropdownProvider>
+        <div className="App">
+          <div className="Input">
+            <Stat />
+          </div>
+
+          <div className="Output">
+            <StarGold />
+            <ItemGold />
+          </div>
+        </div>
+      </DropdownProvider>
+    </StatProvider>
   );
 }
 
