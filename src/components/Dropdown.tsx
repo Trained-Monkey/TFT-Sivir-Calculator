@@ -11,7 +11,7 @@ export const Dropdown = (props: any) => {
         </div>
         <div className='DropdownItemContainer'>
             {items.map((x: any, i:number ) => <div onClick={() => { handleOnClick(x, i); }} className="DropdownItem">
-                <img src={"./images/items/" + x + ".png"}></img>
+                <img src={"%PUBLIC_URL%/images/items/" + x + ".png"}></img>
             </div>)}
         </div>
 

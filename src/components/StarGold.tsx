@@ -41,7 +41,7 @@ export const StarGold = () => {
         <div className="StarGoldTitle"> <h2> Gold gained per star level </h2></div>
         <div className="StarGoldContainer">
             {[1,2,3].map((num) => {
-                return <div className="StarGoldItem"> <div style={container}> <div style={style}> <img src={"./images/misc/star" + num + ".png"}></img> </div> </div>  <div style={container}> <h3> {calculateStarGold(num)} </h3> </div> </div>;
+                return <div className="StarGoldItem"> <div style={container}> <div style={style}> <img src={"%PUBLIC_URL%/images/misc/star" + num + ".png"}></img> </div> </div>  <div style={container}> <h3> {calculateStarGold(num)} </h3> </div> </div>;
             })}
             
         </div>

@@ -94,7 +94,7 @@ export const Stat = () => {
             <div style={{ display: 'flex', width: '100%', height: '50%', justifyContent: 'space-evenly', alignItems: 'center' }}>
                 {dropdown.map((x, i) => {
                     return (<div className='StatItem' onClick={() => { handleItemClick(i) }}>
-                        {selectedItems[i] != null ? <img className='StatItem' src={"/images/items/" + selectedItems[i] + ".png"}></img> : <img className='StatItem' src={"./images/items/empty.png"}></img>}
+                        {selectedItems[i] != null ? <img className='StatItem' src={"%PUBLIC_URL%/images/items/" + selectedItems[i] + ".png"}></img> : <img className='StatItem' src={"./images/items/empty.png"}></img>}
                         {x && <Dropdown handleOnClick={(name: any) => { return handleDropdownClick(name, i); }} />}
 
                     </div>)
