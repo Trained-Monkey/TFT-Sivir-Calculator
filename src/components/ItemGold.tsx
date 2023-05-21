@@ -31,7 +31,7 @@ export const ItemGold = () => {
             {data.map(row => (<div className="ItemGoldRow">
                 <div style={{ width: 100 }}> {row.name} </div>
                 {row.items.map(x => <div className="ItemGoldItem">
-                    <img style={checkItemIncrements(x) ? {borderRadius: 5} : { borderRadius: 5, filter: 'grayscale(100%)' }} src={"%PUBLIC_URL%/images/items/" + x + ".png"}></img>
+                    <img style={checkItemIncrements(x) ? {borderRadius: 5} : { borderRadius: 5, filter: 'grayscale(100%)' }} src={"./images/items/" + x + ".png"}></img>
                 </div>)}
             </div>))}
         </div>
