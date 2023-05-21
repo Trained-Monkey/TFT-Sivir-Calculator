@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import { Stat } from './components/Stat.tsx';
 import { StarGold } from './components/StarGold.tsx';
 import { ItemGold } from './components/ItemGold.tsx';

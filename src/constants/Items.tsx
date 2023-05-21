@@ -55,7 +55,7 @@ export enum ITEM_NAMES {
 
     RADIANT_LASTWHISPER = 'LastWhisperRadiant',
     RADIANT_RUNAANS = 'RunaansHurricaneRadiant',
-    RADIANT_RAPIDFIRECANNON = 'RapidFireCannonRadiant',
+    RADIANT_RAPIDFIRECANNON = 'RapidFirecannonRadiant',
     RADIANT_GUINSOO = 'GuinsoosRagebladeRadiant',
     RADIANT_STATIKK = 'StatikkShivRadiant',
     RADIANT_TITANS = 'TitansResolveRadiant',
