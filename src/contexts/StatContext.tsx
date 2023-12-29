@@ -2,7 +2,8 @@ import { createContext, useState } from "react";
 
 export const StatContext: any = createContext({baseAD: [], modifierAD: []});
 
-export default ({ children }: any) => {
+
+const Context = ({ children }: any) => {
     const baseAD: any = useState(60);
     const modifierAD: any = useState(1.0);
 
@@ -13,3 +14,4 @@ export default ({ children }: any) => {
 
     return <StatContext.Provider value={value}>{children}</StatContext.Provider>
 }
+export default Context;

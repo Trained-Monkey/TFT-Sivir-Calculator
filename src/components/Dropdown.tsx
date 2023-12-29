@@ -6,14 +6,15 @@ export const Dropdown = (props: any) => {
 
     const handleOnClick = props.handleOnClick;
 
-    return (<div className='Dropdown'>
+    return (<div className='Dropdown' data-testid="DropdownComponent">
         <div className='DropdownTitle'>
         </div>
-        <div className='DropdownItemContainer'>
-            {items.map((x: any, i:number ) => <div onClick={() => { handleOnClick(x, i); }} className="DropdownItem">
-                <img src={"%PUBLIC_URL%/images/items/" + x + ".png"}></img>
+        <div className='DropdownItemContainer' >
+            {items.map((name: any, i:number ) => <div key={name} data-testid={name} onClick={() => { handleOnClick(name, i); }} className="DropdownItem">
+                <img src={"./images/items/" + name + ".png"} alt=""></img>
             </div>)}
         </div>
+
 
     </div>)
 }
