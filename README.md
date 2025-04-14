@@ -2,6 +2,10 @@
 
 A calculator made to determine the amount of gold Sivir generates with the hero augment 'Time and a Half'.
 
+### Github Pages
+View the site through Github Pages.
+[https://trained-monkey.github.io/TFT-Sivir-Calculator/]
+
 ### `npm start`
 
 Runs the app in the development mode.\
