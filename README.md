@@ -4,7 +4,7 @@ A calculator made to determine the amount of gold Sivir generates with the hero 
 
 ### Github Pages
 View the site through Github Pages.
-[https://trained-monkey.github.io/TFT-Sivir-Calculator/]
+[TFT-Sivir-Calculator](https://trained-monkey.github.io/TFT-Sivir-Calculator/)
 
 ### `npm start`
 
